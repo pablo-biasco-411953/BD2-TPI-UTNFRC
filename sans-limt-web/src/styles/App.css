@@ -1,0 +1,44 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  /* <--- Cambiamos la tipografía */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.product-card {
+  cursor: pointer;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+.product-card img {
+  transition: transform 0.5s ease;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+/* Para que el texto de la barra se vea continuo */
+.marquee span {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+/* Efecto hover en el dropdown */
+.dropdown-item:hover {
+  color: #888 !important;
+}

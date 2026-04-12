@@ -1,0 +1,81 @@
+[{
+  "_id": {
+    "$oid": "69cda22c7d2373095dedc411"
+  },
+  "codigo": "RULETA15",
+  "descripcion": "Descuento del 15% obtenido en la ruleta de la suerte.",
+  "tipo_descuento": "porcentaje",
+  "valor_descuento": 15,
+  "activo": true,
+  "un_solo_uso_por_usuario": true,
+  "usuarios_que_lo_usaron": [],
+  "fecha_vencimiento": "2026-12-31T23:59:59Z",
+  "createdAt": "2026-04-01T18:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "69cda24d7d2373095dedc413"
+  },
+  "codigo": "BIENVENIDASL",
+  "descripcion": "Cupón de bienvenida para nuevos clientes.",
+  "tipo_descuento": "monto_fijo",
+  "valor_descuento": 5000,
+  "activo": true,
+  "monto_minimo_compra": 30000,
+  "un_solo_uso_por_usuario": true,
+  "usuarios_que_lo_usaron": [],
+  "fecha_vencimiento": "2026-06-30T23:59:59Z",
+  "createdAt": "2026-04-01T18:35:00Z"
+},
+{
+  "_id": {
+    "$oid": "69cda25f7d2373095dedc415"
+  },
+  "codigo": "OFF2025",
+  "descripcion": "Descuento de fin de temporada anterior.",
+  "tipo_descuento": "porcentaje",
+  "valor_descuento": 20,
+  "activo": false,
+  "un_solo_uso_por_usuario": false,
+  "usuarios_que_lo_usaron": [
+    "ID_DE_UN_USUARIO_EJEMPLO"
+  ],
+  "fecha_vencimiento": "2025-12-31T23:59:59Z",
+  "createdAt": "2025-11-01T10:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69cdb7957d2373095dedc421"
+  },
+  "codigo": "RULETA10",
+  "descripcion": "Descuento del 10% obtenido en la ruleta",
+  "tipo_descuento": "porcentaje",
+  "valor_descuento": 10,
+  "activo": true,
+  "un_solo_uso_por_usuario": true,
+  "fecha_vencimiento": "2026-12-31T23:59:59Z"
+},
+{
+  "_id": {
+    "$oid": "69cdb79d7d2373095dedc423"
+  },
+  "codigo": "RULETA5",
+  "descripcion": "Descuento del 5% obtenido en la ruleta",
+  "tipo_descuento": "porcentaje",
+  "valor_descuento": 5,
+  "activo": true,
+  "un_solo_uso_por_usuario": true,
+  "fecha_vencimiento": "2026-12-31T23:59:59Z"
+},
+{
+  "_id": {
+    "$oid": "69cdb7ad7d2373095dedc425"
+  },
+  "codigo": "FREESHIP",
+  "descripcion": "Envío gratis obtenido en la ruleta",
+  "tipo_descuento": "monto_fijo",
+  "valor_descuento": 0,
+  "activo": true,
+  "un_solo_uso_por_usuario": true,
+  "fecha_vencimiento": "2026-12-31T23:59:59Z"
+}]

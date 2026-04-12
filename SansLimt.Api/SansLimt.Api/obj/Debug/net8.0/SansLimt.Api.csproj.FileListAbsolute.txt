@@ -1,0 +1,82 @@
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.staticwebassets.endpoints.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.exe
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.deps.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.runtimeconfig.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.pdb
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\DnsClient.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Snappier.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\scopedcss\bundle\SansLimt.Api.styles.css
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.6C26295D.Up2Date
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\refint\SansLimt.Api.dll
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.pdb
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\ref\SansLimt.Api.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.staticwebassets.endpoints.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.exe
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.deps.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.runtimeconfig.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SansLimt.Api.pdb
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\DnsClient.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\MongoDB.Bson.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\MongoDB.Driver.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\SharpCompress.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Snappier.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.csproj.AssemblyReference.cache
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.AssemblyInfoInputs.cache
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.AssemblyInfo.cs
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.csproj.CoreCompileInputs.cache
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\scopedcss\bundle\SansLimt.Api.styles.css
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.6C26295D.Up2Date
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\refint\SansLimt.Api.dll
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.pdb
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\SansLimt.Api.genruntimeconfig.cache
+C:\Users\nahue\OneDrive\Escritorio\TP 1 BD III - SANS LIMT\TP 1 BD III - SANS LIMT\SansLimt.Api\SansLimt.Api\obj\Debug\net8.0\ref\SansLimt.Api.dll

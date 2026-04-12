@@ -1,0 +1,327 @@
+[{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce6a"
+  },
+  "nombre": "Earth Script Hoodie",
+  "slug": "earth-script-hoodie",
+  "categoria": "hoodies",
+  "precio": 20000,
+  "descripcion": "Hoodie oversized de algodón pesado con bordado frontal Sans Limt.",
+  "imagenes": [
+    "earth-script-hoodie-front.jpeg",
+    "earth-script-hoodie-back.jpeg"
+  ],
+  "active": true,
+  "mililitros": null,
+  "variantes": [
+    {
+      "color": "Brown",
+      "talle": "M",
+      "stock": 2,
+      "sku": "ESH-BR-M"
+    },
+    {
+      "color": "Brown",
+      "talle": "L",
+      "stock": 10,
+      "sku": "ESH-BR-L"
+    },
+    {
+      "color": "Brown",
+      "talle": "XL",
+      "stock": 10,
+      "sku": "ESH-BR-XL"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce6b"
+  },
+  "nombre": "Midnight Zip Hoodie",
+  "slug": "midnight-zip-hoodie",
+  "categoria": "hoodies",
+  "collection": "essentials",
+  "precio": 34000,
+  "material": "Algodón pesado 24/1",
+  "fit": "oversized",
+  "descripcion": "Zip hoodie oversized con logo SL bordado.",
+  "imagenes": [
+    "midnight-zip-hoodie-front.jpeg",
+    "midnight-zip-hoodie-back.jpeg"
+  ],
+  "variantes": [
+    {
+      "color": "Navy",
+      "talle": "M",
+      "stock": 10,
+      "sku": "MZH-NV-M"
+    },
+    {
+      "color": "Navy",
+      "talle": "L",
+      "stock": 10,
+      "sku": "MZH-NV-L"
+    },
+    {
+      "color": "Navy",
+      "talle": "XL",
+      "stock": 8,
+      "sku": "MZH-NV-XL"
+    }
+  ],
+  "active": true,
+  "featured": true,
+  "createdAt": "2026-03-27T18:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce6c"
+  },
+  "nombre": "Shadow Logo Hoodie",
+  "slug": "shadow-logo-hoodie",
+  "categoria": "hoodies",
+  "collection": "essentials",
+  "precio": 32000,
+  "material": "Algodón pesado 24/1",
+  "fit": "oversized",
+  "descripcion": "Hoodie negro oversized con logo tonal.",
+  "imagenes": [
+    "shadow-logo-hoodie-front.jpeg",
+    "shadow-logo-hoodie-back.jpeg"
+  ],
+  "variantes": [
+    {
+      "color": "Black",
+      "talle": "M",
+      "stock": 15,
+      "sku": "SLH-BK-M"
+    },
+    {
+      "color": "Black",
+      "talle": "L",
+      "stock": 15,
+      "sku": "SLH-BK-L"
+    },
+    {
+      "color": "Black",
+      "talle": "XL",
+      "stock": 10,
+      "sku": "SLH-BK-XL"
+    }
+  ],
+  "active": true,
+  "featured": true,
+  "createdAt": "2026-03-27T18:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce6d"
+  },
+  "nombre": "Legacy Zip Hoodie",
+  "slug": "legacy-zip-hoodie",
+  "categoria": "hoodies",
+  "collection": "graphics",
+  "precio": 36000,
+  "material": "Algodón pesado 24/1",
+  "fit": "oversized",
+  "descripcion": "Zip hoodie con branding frontal y trasero.",
+  "imagenes": [
+    "legacy-zip-hoodie-front.jpeg",
+    "legacy-zip-hoodie-back.jpeg"
+  ],
+  "variantes": [
+    {
+      "color": "Black",
+      "talle": "M",
+      "stock": 8,
+      "sku": "LZH-BK-M"
+    },
+    {
+      "color": "Black",
+      "talle": "L",
+      "stock": 8,
+      "sku": "LZH-BK-L"
+    },
+    {
+      "color": "Black",
+      "talle": "XL",
+      "stock": 6,
+      "sku": "LZH-BK-XL"
+    }
+  ],
+  "active": true,
+  "featured": false,
+  "createdAt": "2026-03-27T18:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce6e"
+  },
+  "nombre": "Origin Tee",
+  "slug": "origin-tee",
+  "categoria": "t-shirts",
+  "collection": "graphics",
+  "precio": 18000,
+  "material": "Algodón 24/1",
+  "fit": "oversized",
+  "descripcion": "T-shirt con gráfica Republic of Cordoba.",
+  "imagenes": [
+    "origin-tee-front.jpeg",
+    "origin-tee-back.jpeg"
+  ],
+  "variantes": [
+    {
+      "color": "Black",
+      "talle": "M",
+      "stock": 15,
+      "sku": "OT-BK-M"
+    },
+    {
+      "color": "Black",
+      "talle": "L",
+      "stock": 15,
+      "sku": "OT-BK-L"
+    },
+    {
+      "color": "Black",
+      "talle": "XL",
+      "stock": 10,
+      "sku": "OT-BK-XL"
+    }
+  ],
+  "active": true,
+  "featured": true,
+  "createdAt": "2026-03-27T18:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce6f"
+  },
+  "nombre": "Sunflower Tee",
+  "slug": "sunflower-tee",
+  "categoria": "t-shirts",
+  "collection": "graphics",
+  "precio": 19000,
+  "material": "Algodón 24/1",
+  "fit": "oversized",
+  "descripcion": "T-shirt con gráfica Sunflower.",
+  "imagenes": [
+    "sunflower-tee-front.jpeg",
+    "sunflower-tee-back.jpeg"
+  ],
+  "variantes": [
+    {
+      "color": "Black",
+      "talle": "M",
+      "stock": 12,
+      "sku": "SFT-BK-M"
+    },
+    {
+      "color": "Black",
+      "talle": "L",
+      "stock": 12,
+      "sku": "SFT-BK-L"
+    },
+    {
+      "color": "Black",
+      "talle": "XL",
+      "stock": 8,
+      "sku": "SFT-BK-XL"
+    }
+  ],
+  "active": true,
+  "featured": false,
+  "createdAt": "2026-03-27T18:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69c7130d60fc90b67d59ce70"
+  },
+  "nombre": "Simulation Tee",
+  "slug": "simulation-tee",
+  "categoria": "t-shirts",
+  "collection": "graphics",
+  "precio": 19000,
+  "material": "Algodón 24/1",
+  "fit": "oversized",
+  "descripcion": "T-shirt blanca con gráfica Life Is a Simulation.",
+  "imagenes": [
+    "simulation-tee-front.jpeg",
+    "simulation-tee-back.jpeg"
+  ],
+  "variantes": [
+    {
+      "color": "White",
+      "talle": "M",
+      "stock": 12,
+      "sku": "SMT-WH-M"
+    },
+    {
+      "color": "White",
+      "talle": "L",
+      "stock": 12,
+      "sku": "SMT-WH-L"
+    },
+    {
+      "color": "White",
+      "talle": "XL",
+      "stock": 8,
+      "sku": "SMT-WH-XL"
+    }
+  ],
+  "active": true,
+  "featured": false,
+  "createdAt": "2026-03-27T18:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69cda1657d2373095dedc40a"
+  },
+  "nombre": "Limitless Noir Eau de Parfum",
+  "slug": "limitless-noir-perfume",
+  "categoria": "perfumes",
+  "precio": 130000,
+  "descripcion": "Fragancia intensa con notas de cuero, madera y un toque sutil de vainilla. Edición limitada Sans Limt.",
+  "imagenes": [
+    "limitless-noir.png"
+  ],
+  "active": true,
+  "mililitros": 100,
+  "variantes": [],
+  "stock": 5
+},
+{
+  "_id": {
+    "$oid": "69cda1b37d2373095dedc40c"
+  },
+  "nombre": "Silver Ice Cologne",
+  "slug": "silver-ice-cologne",
+  "categoria": "perfumes",
+  "precio": 260000,
+  "descripcion": "Una fragancia fresca y vibrante, ideal para el día a día. Notas cítricas que rompen el molde.",
+  "imagenes": [
+    "silver-ice.png"
+  ],
+  "active": true,
+  "mililitros": 50,
+  "variantes": [],
+  "stock": 2
+},
+{
+  "_id": {
+    "$oid": "69cde53f633a0815968e3fad"
+  },
+  "nombre": "Dark Amber Elixir",
+  "slug": "dark-amber-elixir",
+  "categoria": "perfumes",
+  "precio": 150000,
+  "descripcion": "Elixir profundo y magnético para la noche. Un aroma dulce y amaderado",
+  "imagenes": [
+    "dark-amber.png"
+  ],
+  "active": false,
+  "mililitros": 100,
+  "variantes": null,
+  "stock": 3
+}]

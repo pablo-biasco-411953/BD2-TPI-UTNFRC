@@ -1,0 +1,2101 @@
+[{
+  "_id": {
+    "$oid": "69cda2d77d2373095dedc418"
+  },
+  "es_invitado": false,
+  "id_usuario": "ID_DE_UN_USUARIO_REGISTRADO",
+  "datos_cliente": {
+    "nombre": "Franco Gómez",
+    "email": "franco.gomez@email.com",
+    "telefono": "351X123456"
+  },
+  "items": [
+    {
+      "id_producto": "ID_DEL_HOODIE_QUE_YA_TENES",
+      "nombre": "Earth Script Hoodie",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 32000
+    },
+    {
+      "id_producto": "ID_DEL_PERFUME_DARK_AMBER",
+      "nombre": "Dark Amber Elixir",
+      "cantidad": 1,
+      "precio_unitario": 52000
+    }
+  ],
+  "subtotal": 84000,
+  "cupon_aplicado": {
+    "codigo": "BIENVENIDASL",
+    "descuento_aplicado": 5000
+  },
+  "total": 79000,
+  "metodo_pago": "Tarjeta de Crédito",
+  "estado": "Entregado",
+  "fecha": "2026-04-01T15:30:00Z"
+},
+{
+  "_id": {
+    "$oid": "69cda2eb7d2373095dedc41a"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Micaela Suárez",
+    "email": "mica.suarez@email.com",
+    "telefono": "11X987654"
+  },
+  "items": [
+    {
+      "id_producto": "ID_DEL_PERFUME_SILVER_ICE",
+      "nombre": "Silver Ice Cologne",
+      "cantidad": 2,
+      "precio_unitario": 38000
+    }
+  ],
+  "subtotal": 76000,
+  "cupon_aplicado": null,
+  "total": 76000,
+  "metodo_pago": "Transferencia",
+  "estado": "Pendiente",
+  "fecha": "2026-04-01T19:00:00Z"
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8eec"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1121283066"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 60000,
+  "cupon_aplicado": null,
+  "total": 60000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-04T19:55:51.985Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8eed"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1126883945"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "S",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    }
+  ],
+  "subtotal": 25000,
+  "cupon_aplicado": {
+    "codigo": "OFF15",
+    "descuento_aplicado": 3750
+  },
+  "total": 21250,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-17T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8eee"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1191060783"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 110000,
+  "cupon_aplicado": null,
+  "total": 110000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-10T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8eef"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Bautista Silva",
+    "email": "bauti@test.com",
+    "telefono": "1192083071"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 90000,
+  "cupon_aplicado": null,
+  "total": 90000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-04T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef0"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1125368982"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 180000,
+  "cupon_aplicado": null,
+  "total": 180000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-17T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef1"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1115828537"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 120000,
+  "cupon_aplicado": {
+    "codigo": "OFF15",
+    "descuento_aplicado": 18000
+  },
+  "total": 102000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-24T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef2"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1135882427"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 140000,
+  "cupon_aplicado": null,
+  "total": 140000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Pendiente",
+  "fecha": {
+    "$date": "2026-02-19T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef3"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Bautista Silva",
+    "email": "bauti@test.com",
+    "telefono": "1194060000"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 125000,
+  "cupon_aplicado": null,
+  "total": 125000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-02-04T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef4"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Sofía Clear",
+    "email": "sofia@test.com",
+    "telefono": "1195766831"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 55000,
+  "cupon_aplicado": {
+    "codigo": "OFF15",
+    "descuento_aplicado": 8250
+  },
+  "total": 46750,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-02-13T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef5"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1127397942"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 250000,
+  "cupon_aplicado": null,
+  "total": 250000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-04T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef6"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1156912706"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "S",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    }
+  ],
+  "subtotal": 180000,
+  "cupon_aplicado": null,
+  "total": 180000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-06T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef7"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Bautista Silva",
+    "email": "bauti@test.com",
+    "telefono": "1155517922"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "M",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 85000,
+  "cupon_aplicado": {
+    "codigo": "OFF15",
+    "descuento_aplicado": 12750
+  },
+  "total": 72250,
+  "metodo_pago": "MercadoPago",
+  "estado": "Pendiente",
+  "fecha": {
+    "$date": "2026-03-07T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef8"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1153785930"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 145000,
+  "cupon_aplicado": null,
+  "total": 145000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-04T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8ef9"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1145251907"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 190000,
+  "cupon_aplicado": null,
+  "total": 190000,
+  "metodo_pago": "Transferencia",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-01-07T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8efa"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1184954029"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 45000,
+  "cupon_aplicado": null,
+  "total": 45000,
+  "metodo_pago": "Transferencia",
+  "estado": "Pendiente",
+  "fecha": {
+    "$date": "2026-01-29T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8efb"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1146014101"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 15000,
+  "cupon_aplicado": null,
+  "total": 15000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-11T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8efc"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1128477070"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 90000,
+  "cupon_aplicado": null,
+  "total": 90000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-16T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8efd"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1133143970"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 240000,
+  "cupon_aplicado": null,
+  "total": 240000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-22T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8efe"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1161153455"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "XL",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "M",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 105000,
+  "cupon_aplicado": null,
+  "total": 105000,
+  "metodo_pago": "Efectivo",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-02-20T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8eff"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1136661773"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "XL",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 125000,
+  "cupon_aplicado": null,
+  "total": 125000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-28T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f00"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1164598628"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 110000,
+  "cupon_aplicado": null,
+  "total": 110000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-02T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f01"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1194517752"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    }
+  ],
+  "subtotal": 100000,
+  "cupon_aplicado": null,
+  "total": 100000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-01-15T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f02"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1152307863"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 185000,
+  "cupon_aplicado": null,
+  "total": 185000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-17T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f03"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1191274478"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 45000,
+  "cupon_aplicado": null,
+  "total": 45000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-21T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f04"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1164711222"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 85000,
+  "cupon_aplicado": null,
+  "total": 85000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-06T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f05"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Sofía Clear",
+    "email": "sofia@test.com",
+    "telefono": "1122128082"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 60000,
+  "cupon_aplicado": null,
+  "total": 60000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-15T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f06"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1196370728"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 110000,
+  "cupon_aplicado": null,
+  "total": 110000,
+  "metodo_pago": "Transferencia",
+  "estado": "Pendiente",
+  "fecha": {
+    "$date": "2026-02-15T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f07"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1119020511"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 135000,
+  "cupon_aplicado": null,
+  "total": 135000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-02-16T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f08"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1131208310"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 60000,
+  "cupon_aplicado": null,
+  "total": 60000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-03-11T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f09"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1157113571"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    }
+  ],
+  "subtotal": 25000,
+  "cupon_aplicado": null,
+  "total": 25000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-04T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f0a"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Bautista Silva",
+    "email": "bauti@test.com",
+    "telefono": "1151131758"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "S",
+      "cantidad": 1,
+      "precio_unitario": 25000
+    }
+  ],
+  "subtotal": 25000,
+  "cupon_aplicado": null,
+  "total": 25000,
+  "metodo_pago": "Efectivo",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-03-26T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f0b"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1122444179"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 275000,
+  "cupon_aplicado": null,
+  "total": 275000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-31T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f0c"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1130905294"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 15000,
+  "cupon_aplicado": null,
+  "total": 15000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-09T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f0d"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1164681485"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 170000,
+  "cupon_aplicado": null,
+  "total": 170000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-19T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f0e"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1186960228"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "M",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 140000,
+  "cupon_aplicado": null,
+  "total": 140000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-08T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f0f"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1189108491"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 45000,
+  "cupon_aplicado": null,
+  "total": 45000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-17T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f10"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Sofía Clear",
+    "email": "sofia@test.com",
+    "telefono": "1197445086"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 120000,
+  "cupon_aplicado": null,
+  "total": 120000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-03-11T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f11"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Sofía Clear",
+    "email": "sofia@test.com",
+    "telefono": "1169308091"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 60000,
+  "cupon_aplicado": null,
+  "total": 60000,
+  "metodo_pago": "Efectivo",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2025-12-26T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f12"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Sofía Clear",
+    "email": "sofia@test.com",
+    "telefono": "1185367312"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 45000,
+  "cupon_aplicado": null,
+  "total": 45000,
+  "metodo_pago": "Transferencia",
+  "estado": "Pendiente",
+  "fecha": {
+    "$date": "2026-03-02T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f13"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1159932867"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 30000,
+  "cupon_aplicado": null,
+  "total": 30000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-03-20T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f14"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1184769209"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 120000,
+  "cupon_aplicado": null,
+  "total": 120000,
+  "metodo_pago": "Transferencia",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-01-11T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f15"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Juan Pérez",
+    "email": "juan@test.com",
+    "telefono": "1112018679"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "44",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 110000,
+  "cupon_aplicado": null,
+  "total": 110000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-28T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f16"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1142785728"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 1,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "L",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 145000,
+  "cupon_aplicado": null,
+  "total": 145000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-03-16T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f17"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1136721189"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 60000,
+  "cupon_aplicado": null,
+  "total": 60000,
+  "metodo_pago": "Transferencia",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-02-27T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f18"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Bautista Silva",
+    "email": "bauti@test.com",
+    "telefono": "1176516594"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    }
+  ],
+  "subtotal": 185000,
+  "cupon_aplicado": null,
+  "total": 185000,
+  "metodo_pago": "Efectivo",
+  "estado": "Enviado",
+  "fecha": {
+    "$date": "2026-02-16T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f19"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1169502588"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "XL",
+      "cantidad": 1,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 75000,
+  "cupon_aplicado": null,
+  "total": 75000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-02-22T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f1a"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Lucas Rodríguez",
+    "email": "lucas@test.com",
+    "telefono": "1195907367"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 2,
+      "precio_unitario": 15000
+    }
+  ],
+  "subtotal": 45000,
+  "cupon_aplicado": null,
+  "total": 45000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-21T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f1b"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Mateo Romero",
+    "email": "mateo@test.com",
+    "telefono": "1174154900"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c001"
+      },
+      "nombre": "Remera Oversize Black",
+      "variante_seleccionada": "XL",
+      "cantidad": 2,
+      "precio_unitario": 25000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c002"
+      },
+      "nombre": "Hoodie Sans Limit",
+      "variante_seleccionada": "M",
+      "cantidad": 2,
+      "precio_unitario": 45000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "40",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 250000,
+  "cupon_aplicado": null,
+  "total": 250000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2026-02-07T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f1c"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Bautista Silva",
+    "email": "bauti@test.com",
+    "telefono": "1123571608"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c004"
+      },
+      "nombre": "Gorra Trucker SL",
+      "variante_seleccionada": "Único",
+      "cantidad": 1,
+      "precio_unitario": 15000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c005"
+      },
+      "nombre": "Pantalon Cargo Dark",
+      "variante_seleccionada": "42",
+      "cantidad": 2,
+      "precio_unitario": 55000
+    }
+  ],
+  "subtotal": 125000,
+  "cupon_aplicado": null,
+  "total": 125000,
+  "metodo_pago": "MercadoPago",
+  "estado": "Pendiente",
+  "fecha": {
+    "$date": "2026-03-12T19:55:51.987Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cec9c86a5f75608bed8f1d"
+  },
+  "es_invitado": true,
+  "id_usuario": null,
+  "datos_cliente": {
+    "nombre": "Marta Gómez",
+    "email": "marta@test.com",
+    "telefono": "1134224121"
+  },
+  "items": [
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 2,
+      "precio_unitario": 30000
+    },
+    {
+      "id_producto": {
+        "$oid": "65f1a2b3c4d5e6f7a8b9c003"
+      },
+      "nombre": "Perfume SLMT 100ml",
+      "variante_seleccionada": null,
+      "cantidad": 1,
+      "precio_unitario": 30000
+    }
+  ],
+  "subtotal": 90000,
+  "cupon_aplicado": null,
+  "total": 90000,
+  "metodo_pago": "Efectivo",
+  "estado": "Entregado",
+  "fecha": {
+    "$date": "2025-12-26T19:55:51.987Z"
+  }
+}]

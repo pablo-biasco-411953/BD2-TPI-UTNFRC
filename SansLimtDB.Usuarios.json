@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "69c7140560fc90b67d59ce73"
+  },
+  "Username": "nahuel_admin",
+  "Password": "Michigan1611.",
+  "Rol": "Admin"
+},
+{
+  "_id": {
+    "$oid": "69c7140560fc90b67d59ce74"
+  },
+  "Username": "matias_admin",
+  "Password": "Hana070400",
+  "Rol": "Admin"
+},
+{
+  "_id": {
+    "$oid": "69cea8071f45f36e9be81596"
+  },
+  "Username": "nahuel_cliente",
+  "Password": "Ceferino1998.",
+  "Rol": "Cliente",
+  "Email": "cliente@gmail.com",
+  "NombreCompleto": "Nahuel Perez",
+  "Telefono": "1122334455",
+  "DireccionEnvio": {
+    "Calle": "Av. Siempre Viva 742",
+    "Ciudad": "Córdoba",
+    "CodigoPostal": "5000"
+  }
+},
+{
+  "_id": {
+    "$oid": "69ceabfb3d104029767db111"
+  },
+  "Username": "Newylot98",
+  "Password": "Ares123456",
+  "Rol": "Cliente",
+  "Email": "gaticanahuel70@gmail.com",
+  "NombreCompleto": "Nahuel Gatica",
+  "Telefono": "03517072321",
+  "Direccion": {
+    "Calle": "Gral. Jose Artigas 493",
+    "Ciudad": "Córdoba",
+    "CodigoPostal": "X5000KVI"
+  }
+},
+{
+  "_id": {
+    "$oid": "69cf0c22f144d15340d52a23"
+  },
+  "Username": "Valeria",
+  "Password": "Ambar2026",
+  "Rol": "Cliente",
+  "Email": "valeriascala@gmail.com",
+  "NombreCompleto": "Valeria Gatica",
+  "Telefono": "3518889999",
+  "Direccion": {
+    "Calle": "Galan 70",
+    "Ciudad": "Córdoba",
+    "CodigoPostal": "5008"
+  }
+}]
