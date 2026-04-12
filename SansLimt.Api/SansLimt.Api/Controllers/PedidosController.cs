@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MongoDB.Driver;
+using StackExchange.Redis;
 using SansLimt.Api.Models;
 using SansLimt.Api.Services;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace SansLimt.Api.Controllers
 {
@@ -12,141 +11,95 @@ namespace SansLimt.Api.Controllers
     public class PedidosController : ControllerBase
     {
         private readonly PedidosService _pedidosService;
+        private readonly IMongoCollection<Producto> _productosCollection;
+        private readonly IDatabase _redis;
 
-        public PedidosController(PedidosService pedidosService)
+        public PedidosController(PedidosService pedidosService, IMongoDatabase database, IConnectionMultiplexer redis)
         {
             _pedidosService = pedidosService;
+            _productosCollection = database.GetCollection<Producto>("Productos");
+            _redis = redis.GetDatabase();
         }
 
-        
-        [HttpGet]
-        public async Task<ActionResult<List<Pedido>>> Get()
+
+        [HttpPost("liberar")]
+        public async Task<IActionResult> LiberarStock([FromBody] ReservaDto reserva)
         {
-            var pedidos = await _pedidosService.GetAsync();
-            return Ok(pedidos);
-        }
+            var db = _redis; // Tu inyección de IConnectionMultiplexer
+            string talleKey = string.IsNullOrEmpty(reserva.Talle) ? "unico" : reserva.Talle;
+            string key = $"reserva:{reserva.ProductoId}:{talleKey}:{reserva.Usuario}";
 
-       
-        [HttpPost]
-        public async Task<IActionResult> Post(Pedido nuevoPedido)
-        {
-            nuevoPedido.Id = null;
-            nuevoPedido.Fecha = DateTime.UtcNow; // guardamos la fecha exacta
+            // Le restamos a Redis la cantidad que el usuario eliminó del carrito
+            var cantidadRestante = await db.StringDecrementAsync(key, reserva.Cantidad);
 
-            await _pedidosService.CreateAsync(nuevoPedido);
-            return CreatedAtAction(nameof(Get), new { id = nuevoPedido.Id }, nuevoPedido);
-        }
-
-       
-        [HttpPut("{id:length(24)}")]
-        public async Task<IActionResult> Update(string id, Pedido pedidoActualizado)
-        {
-            var pedido = await _pedidosService.GetAsync(id);
-
-            if (pedido is null) return NotFound();
-
-            pedidoActualizado.Id = pedido.Id;
-            await _pedidosService.UpdateAsync(id, pedidoActualizado);
-
-            return NoContent();
-        }
-
-        
-        [HttpPost("generar-ficticios")]
-        public async Task<IActionResult> GenerarPedidosFicticios()
-        {
-            var random = new Random();
-
-            
-            var nombres = new[] { "Juan Pérez", "Marta Gómez", "Lucas Rodríguez", "Sofía Clear", "Bautista Silva", "Mateo Romero" };
-            var emails = new[] { "juan@test.com", "marta@test.com", "lucas@test.com", "sofia@test.com", "bauti@test.com", "mateo@test.com" };
-            var metodosPago = new[] { "MercadoPago", "Transferencia", "Efectivo" };
-            var estados = new[] { "Entregado", "Entregado", "Entregado", "Enviado", "Pendiente" }; 
-
-          
-            var productosDisponibles = new[]
-            {
-            new { Id = "65f1a2b3c4d5e6f7a8b9c001", Nombre = "Remera Oversize Black", Precio = 25000, Talles = new[] { "S", "M", "L", "XL" } },
-            new { Id = "65f1a2b3c4d5e6f7a8b9c002", Nombre = "Hoodie Sans Limit", Precio = 45000, Talles = new[] { "M", "L", "XL" } },
-            new { Id = "65f1a2b3c4d5e6f7a8b9c003", Nombre = "Perfume SLMT 100ml", Precio = 30000, Talles = new string[] { } }, 
-            new { Id = "65f1a2b3c4d5e6f7a8b9c004", Nombre = "Gorra Trucker SL", Precio = 15000, Talles = new[] { "Único" } },
-            new { Id = "65f1a2b3c4d5e6f7a8b9c005", Nombre = "Pantalon Cargo Dark", Precio = 55000, Talles = new[] { "40", "42", "44" } }
-    };
-
-            var pedidosSimulados = new List<Pedido>();
-
-            
-            for (int i = 0; i < 50; i++)
-            {
-                int clienteIndex = random.Next(nombres.Length);
-
-                
-                var fechaAleatoria = DateTime.UtcNow.AddDays(-random.Next(1, 120));
-
-                var itemsDelPedido = new List<ItemPedido>();
-                int cantidadProductos = random.Next(1, 4); 
-                int subtotal = 0;
-
-                for (int j = 0; j < cantidadProductos; j++)
-                {
-                    var prodRandom = productosDisponibles[random.Next(productosDisponibles.Length)];
-                    int cant = random.Next(1, 3); 
-
-                    string? talle = prodRandom.Talles.Length > 0
-                        ? prodRandom.Talles[random.Next(prodRandom.Talles.Length)]
-                        : null;
-
-                    itemsDelPedido.Add(new ItemPedido
-                    {
-                        IdProducto = prodRandom.Id,
-                        Nombre = prodRandom.Nombre,
-                        VarianteSeleccionada = talle,
-                        Cantidad = cant,
-                        PrecioUnitario = prodRandom.Precio
-                    });
-
-                    subtotal += prodRandom.Precio * cant;
-                }
-
-                
-                CuponAplicado? cupon = null;
-                int total = subtotal;
-                if (random.Next(1, 10) > 8)
-                {
-                    int descuento = (int)(subtotal * 0.15); 
-                    cupon = new CuponAplicado { Codigo = "OFF15", DescuentoAplicado = descuento };
-                    total -= descuento;
-                }
-
-                var nuevoPedido = new Pedido
-                {
-                    EsInvitado = true,
-                    IdUsuario = null,
-                    DatosCliente = new Cliente
-                    {
-                        Nombre = nombres[clienteIndex],
-                        Email = emails[clienteIndex],
-                        Telefono = "11" + random.Next(11111111, 99999999)
-                    },
-                    Items = itemsDelPedido,
-                    Subtotal = subtotal,
-                    CuponAplicado = cupon,
-                    Total = total,
-                    MetodoPago = metodosPago[random.Next(metodosPago.Length)],
-                    Estado = estados[random.Next(estados.Length)],
-                    Fecha = fechaAleatoria
-                };
-
-                pedidosSimulados.Add(nuevoPedido);
+            // Si la cantidad llega a 0 (o menos), borramos la llave para limpiar la memoria
+            if (cantidadRestante <= 0) {
+                await db.KeyDeleteAsync(key);
             }
 
-            // Guardamos todos los pedidos generados en MongoDB
-            foreach (var ped in pedidosSimulados)
-            {
-                await _pedidosService.CreateAsync(ped);
+            return Ok(new { success = true, message = "Stock liberado en Redis" });
+        }
+
+        [HttpPost("reservar")]
+        public async Task<IActionResult> ReservarStock([FromBody] ReservaDto reserva)
+        {
+            var db = _redis; // Usamos la DB de Redis inyectada
+            string talleKey = string.IsNullOrEmpty(reserva.Talle) ? "unico" : reserva.Talle;
+
+            // 1. Buscamos el producto en MONGODB para saber el stock real original
+            var producto = await _productosCollection.Find(p => p.Id == reserva.ProductoId).FirstOrDefaultAsync();
+            if (producto == null) return NotFound("Producto no encontrado.");
+
+            int stockReal = 0;
+            if (producto.Variantes != null && talleKey != "unico") {
+                var variante = producto.Variantes.FirstOrDefault(v => v.Talle == talleKey);
+                if (variante != null) stockReal = variante.Stock;
+            } else {
+                stockReal = producto.Stock ?? 0;
             }
 
-            return Ok(new { mensaje = "¡Se crearon 50 pedidos ficticios con éxito para tus estadísticas!" });
+            // 2. Contamos cuántas reservas YA EXISTEN en Redis para este producto y talle
+            var server = _redis.Multiplexer.GetServer(_redis.Multiplexer.GetEndPoints().First());
+            var patternBusqueda = $"reserva:{reserva.ProductoId}:{talleKey}:*";
+            var llaves = server.Keys(pattern: patternBusqueda).ToList();
+
+            int totalReservado = 0;
+            foreach (var k in llaves) {
+                var val = await db.StringGetAsync(k);
+                if (val.HasValue) totalReservado += (int)val;
+            }
+
+            // 3. VALIDACIÓN: ¿Hay lugar para esta nueva reserva?
+            if ((stockReal - totalReservado) < reserva.Cantidad) {
+                return BadRequest(new { success = false, message = "Sin stock disponible por el momento." });
+            }
+
+            // 4. GUARDAR RESERVA
+            // Usamos el usuario en la key para que cada uno tenga su propio timer/reserva
+            string key = $"reserva:{reserva.ProductoId}:{talleKey}:{reserva.Usuario}";
+
+            // Incrementamos la cantidad reservada
+            await db.StringIncrementAsync(key, reserva.Cantidad);
+
+            // Seteamos el TTL (Tiempo de vida) de 15 minutos
+            await db.KeyExpireAsync(key, TimeSpan.FromMinutes(15));
+
+            // 5. RESPUESTA
+            // Devolvemos el tiempo de expiración para que el Frontend setee el Timer
+            var tiempoExpiracion = DateTime.UtcNow.AddMinutes(15);
+
+            return Ok(new {
+                success = true,
+                key = key,
+                expiresAt = tiempoExpiracion,
+                message = "Stock reservado por 15 minutos"
+            });
         }
+    }
+    public class ReservaDto {
+        public string ProductoId { get; set; } = null!;
+        public string? Talle { get; set; }
+        public string Usuario { get; set; } = null!;
+        public int Cantidad { get; set; }
     }
 }

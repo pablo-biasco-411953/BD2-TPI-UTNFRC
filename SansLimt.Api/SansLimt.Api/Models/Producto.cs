@@ -7,6 +7,7 @@ namespace SansLimt.Api.Models
     [BsonIgnoreExtraElements]
     public class Producto
     {
+
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
@@ -47,6 +48,8 @@ namespace SansLimt.Api.Models
         [BsonElement("stock")]
         [BsonIgnoreIfNull]
         public int? Stock { get; set; }
+        [BsonIgnore] // 🔥 Importante: No se guarda en la base, solo se usa en memoria
+        public bool EsSugerido { get; set; } = false;
     }
 
     [BsonIgnoreExtraElements]

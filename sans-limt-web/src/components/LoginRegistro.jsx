@@ -30,7 +30,6 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
     const handleLoginSubmit = async (e) => {
         e.preventDefault();
         
-        // 🔥 INICIA SPINNER DE CARGA
         Swal.fire({
             title: 'Iniciando sesión...',
             allowOutsideClick: false,
@@ -38,17 +37,17 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
         });
 
         try {
-            const response = await fetch('https://localhost:7094/api/auth/login', {
+            // 🔥 ACÁ CAMBIAMOS EL PUERTO A 5286 Y LE SACAMOS LA "S" A HTTPS
+            const response = await fetch('http://localhost:5286/api/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(loginData)
             });
 
             const data = await response.json();
-            Swal.close(); // Cerramos el spinner
+            Swal.close(); 
 
             if (response.ok) {
-                // 🔥 BANNER DE BIENVENIDA
                 Swal.fire({
                     icon: 'success',
                     title: `¡BIENVENIDO DE NUEVO ${data.username.toUpperCase()}!`,
@@ -60,7 +59,6 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
 
                 if (onLoginSuccess) onLoginSuccess(data);
             } else {
-                // 🔥 BANNER ERROR DE CREDENCIALES
                 Swal.fire({
                     icon: 'error',
                     title: 'ERROR DE ACCESO',
@@ -91,7 +89,8 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
         });
 
         try {
-            const response = await fetch('https://localhost:7094/api/auth/registrar', {
+            // 🔥 ACÁ TAMBIÉN CAMBIAMOS EL PUERTO A 5286
+            const response = await fetch('http://localhost:5286/api/auth/registrar', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(registroData)
@@ -101,7 +100,6 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
             Swal.close();
 
             if (response.ok) {
-                // 🔥 BANNER DE REGISTRO EXITOSO
                 Swal.fire({
                     icon: 'success',
                     title: '¡CUENTA CREADA!',
