@@ -38,7 +38,7 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
 
         try {
             // 🔥 ACÁ CAMBIAMOS EL PUERTO A 5286 Y LE SACAMOS LA "S" A HTTPS
-            const response = await fetch('http://localhost:5286/api/auth/login', {
+            const response = await fetch('http://200.58.98.15:5286/api/auth/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(loginData)
@@ -90,7 +90,7 @@ export const LoginRegistro = ({ onLoginSuccess }) => {
 
         try {
             // 🔥 ACÁ TAMBIÉN CAMBIAMOS EL PUERTO A 5286
-            const response = await fetch('http://localhost:5286/api/auth/registrar', {
+            const response = await fetch('http://200.58.98.15:5286/api/auth/registrar', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(registroData)

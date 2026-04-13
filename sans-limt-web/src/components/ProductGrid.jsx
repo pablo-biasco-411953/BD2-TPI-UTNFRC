@@ -107,7 +107,7 @@ export const ProductGrid = ({
   useEffect(() => {
     const fetchSocial = async () => {
       try {
-        const res = await axios.get('http://localhost:5286/api/Social/actividad');
+        const res = await axios.get('http://200.58.98.15:5286/api/Social/actividad');
         if (res.data?.length > 0) {
           const msg = res.data[0];
           if (msg !== ultimoMsgRef.current) {
@@ -136,7 +136,7 @@ export const ProductGrid = ({
     const uid = usuarioLogueado ? `${usuarioLogueado.username}_${sessionViewerId}` : `anon_${sessionViewerId}`;
     const ping = async () => {
       try {
-        const res = await axios.post(`http://localhost:5286/api/Social/viewing/${id}/${uid}`);
+        const res = await axios.post(`http://200.58.98.15:5286/api/Social/viewing/${id}/${uid}`);
         setViewersCount(res.data.count);
       } catch {}
     };
@@ -148,7 +148,7 @@ export const ProductGrid = ({
   useEffect(() => {
     if (!productoSeleccionado) { setSugerencias([]); return; }
     const id = productoSeleccionado.id || productoSeleccionado._id;
-    axios.get(`http://localhost:5286/api/Social/sugerencias?productoId=${id}&categoria=${productoSeleccionado.categoria}`)
+    axios.get(`http://200.58.98.15:5286/api/Social/sugerencias?productoId=${id}&categoria=${productoSeleccionado.categoria}`)
       .then(res => {
         setSugerencias(productos.filter(p => res.data.ids.includes(p.id || p._id)));
       })

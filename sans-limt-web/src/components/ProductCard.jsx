@@ -137,7 +137,7 @@ export const ProductCard = ({
     if (abrirDetalleProp) abrirDetalleProp(prod);
     if (usuarioLogueado) {
       try {
-        await axios.post('http://localhost:5286/api/Social/registrar-interes', {
+        await axios.post('http://200.58.98.15:5286/api/Social/registrar-interes', {
           Email: usuarioLogueado.email, Categoria: prod.categoria
         });
       } catch {}

@@ -313,7 +313,7 @@ export default function App() {
 
   useEffect(() => {
     const t = setInterval(async () => {
-      try { const { data } = await axios.get('http://localhost:5286/api/Social/actividad'); setActividades(data); } catch {}
+      try { const { data } = await axios.get('http://200.58.98.15:5286/api/Social/actividad'); setActividades(data); } catch {}
     }, 3000);
     return () => clearInterval(t);
   }, []);
@@ -332,7 +332,7 @@ export default function App() {
         setUsuario(storedUser);
         setIsAdmin(storedUser.rol === 'Admin');
         try {
-          const res = await axios.get(`http://localhost:5286/api/Social/recomendaciones-usuario/${storedUser.username}`);
+          const res = await axios.get(`http://200.58.98.15:5286/api/Social/recomendaciones-usuario/${storedUser.username}`);
           if (res.data.ids?.length > 0) setRecomendadosIds(res.data.ids);
         } catch {}
       }
@@ -343,7 +343,7 @@ export default function App() {
   const traerProductos = async () => {
     const user = JSON.parse(localStorage.getItem('usuario'));
     try {
-      const { data } = await axios.get(`http://localhost:5286/api/productos?userEmail=${user?.email || ''}`);
+      const { data } = await axios.get(`http://200.58.98.15:5286/api/productos?userEmail=${user?.email || ''}`);
       setProductos(data);
     } catch (e) { console.error(e); }
   };
@@ -360,14 +360,28 @@ export default function App() {
   const sugeridosParaVos = productosProcesados.filter(p => p.esSugerido);
   const productosCatalogo = productosProcesados.filter(p => categoriaActual === 'ALL' || p.categoria === categoriaActual);
 
-  const addToCart = async (producto, talleElegido) => {
+const addToCart = async (producto, talleElegido) => {
     if (!usuario) { alert('Iniciá sesión para reservar.'); setShowLoginScreen(true); return; }
     const mongoId = (producto.id || producto._id).toString();
     const talleDef = talleElegido || 'unico';
+    
     try {
-      const { data } = await axios.post('http://localhost:5286/api/Pedidos/reservar', {
+      // 1. Hace la reserva
+      const { data } = await axios.post('http://200.58.98.15:5286/api/Pedidos/reservar', {
         ProductoId:mongoId, Talle:talleDef, Usuario:usuario.username, Cantidad:1
       });
+
+      // 🔥 2. EL CHISME (Esto era lo que faltaba para que salga el cartel) 🔥
+      try {
+        await axios.post('http://200.58.98.15:5286/api/Social/actividad', {
+          NombreUsuario: usuario.username,
+          NombreProducto: producto.nombre
+        });
+      } catch (e) {
+        console.warn("No se pudo avisar al social feed", e);
+      }
+
+      // 3. Actualiza stock y carrito visualmente
       setProductos(prev => prev.map(p => {
         if ((p.id || p._id).toString() !== mongoId) return p;
         const c = { ...p };
@@ -446,7 +460,7 @@ export default function App() {
             <ProductGrid
               productos={productosCatalogo}
               isAdmin={isAdmin}
-              handleDelete={id => axios.delete(`http://localhost:5286/api/productos/${id}`).then(traerProductos)}
+              handleDelete={id => axios.delete(`http://200.58.98.15:5286/api/productos/${id}`).then(traerProductos)}
               addToCart={addToCart}
               usuarioLogueado={usuario}
               refrescarProductos={traerProductos}

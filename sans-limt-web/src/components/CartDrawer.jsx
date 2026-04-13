@@ -122,7 +122,7 @@ export const CartDrawer = ({
   const restarCantidad = async (item) => {
     if (item.cantidad <= 1) { eliminarItem(item); return; }
     try {
-      await axios.post('http://localhost:5286/api/Pedidos/liberar', {
+      await axios.post('http://200.58.98.15:5286/api/Pedidos/liberar', {
         ProductoId: item.id || item._id || item.slug,
         Talle: item.talleElegido || 'unico',
         Usuario: usuarioLogueado?.username, Cantidad: 1
@@ -137,7 +137,7 @@ export const CartDrawer = ({
 
   const eliminarItem = async (item) => {
     try {
-      await axios.post('http://localhost:5286/api/Pedidos/liberar', {
+      await axios.post('http://200.58.98.15:5286/api/Pedidos/liberar', {
         ProductoId: item.id || item._id || item.slug,
         Talle: item.talleElegido || 'unico',
         Usuario: usuarioLogueado?.username, Cantidad: item.cantidad

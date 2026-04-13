@@ -107,9 +107,9 @@ export const CheckoutModal = ({
     e.preventDefault();
     const productosIds = cart.map(item => item.id || item._id);
     try {
-      await axios.post(`http://localhost:5286/api/Social/registrar-compra/${formData.nombre}`, productosIds);
+      await axios.post(`http://200.58.98.15:5286/api/Social/registrar-compra/${formData.nombre}`, productosIds);
       const idPrincipal = productosIds[0];
-      const res = await axios.get(`http://localhost:5286/api/Social/sugerencias?productoId=${idPrincipal}`);
+      const res = await axios.get(`http://200.58.98.15:5286/api/Social/sugerencias?productoId=${idPrincipal}`);
       if (actualizarRecomendacionesPostCompra) {
         actualizarRecomendacionesPostCompra(res.data.ids, productosIds);
       }

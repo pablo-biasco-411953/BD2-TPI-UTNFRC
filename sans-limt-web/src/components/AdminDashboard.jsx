@@ -46,7 +46,7 @@ export const AdminDashboard = ({ productos = [], traerProductos }) => {
     const handleCreate = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://localhost:5286/api/productos', nuevoProd);
+            await axios.post('http://200.58.98.15:5286/api/productos', nuevoProd);
             setNuevoProd({ nombre: '', precio: 0, categoria: '', imagenUrl: '', mililitros: null, tipo: '', descripcion: '', slug: '', variantes: [{ talle: '', color: '', stock: 0, sku: '' }] });
             setMostrarModalVariantes(false); // Cerramos el modal tras crear con éxito
             traerProductos();
@@ -75,7 +75,7 @@ export const AdminDashboard = ({ productos = [], traerProductos }) => {
 
     const handleSaveEdit = async (id) => {
         try {
-            await axios.put(`http://localhost:5286/api/productos/${id}`, prodEditado);
+            await axios.put(`http://200.58.98.15:5286/api/productos/${id}`, prodEditado);
             setEditandoId(null);
             traerProductos();
             alert("¡Producto y variantes actualizados!");
@@ -88,7 +88,7 @@ export const AdminDashboard = ({ productos = [], traerProductos }) => {
     const handleDelete = async (id) => {
         if (window.confirm("¿Seguro querés eliminar este producto?")) {
             try {
-                await axios.delete(`http://localhost:5286/api/productos/${id}`);
+                await axios.delete(`http://200.58.98.15:5286/api/productos/${id}`);
                 traerProductos();
             } catch (error) {
                 console.error("Error al eliminar:", error);

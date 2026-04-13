@@ -90,7 +90,7 @@ export const Ruleta = ({ onWinCupon, usuarioLogueado }) => {
     if (!usuarioLogueado || DEBUG_MODE) { setBloqueado(false); return; }
     const checkEstado = async () => {
       try {
-        const res = await axios.get(`http://localhost:5286/api/Ruleta/estado/${usuarioLogueado.username}`);
+        const res = await axios.get(`http://200.58.98.15:5286/api/Ruleta/estado/${usuarioLogueado.username}`);
         if (res.data.bloqueado) { setBloqueado(true); setTiempoRestante(res.data.segundosRestantes); }
       } catch (e) { console.error(e); }
     };
@@ -106,7 +106,7 @@ export const Ruleta = ({ onWinCupon, usuarioLogueado }) => {
   useEffect(() => {
     const fetchGanadores = async () => {
       try {
-        const res = await axios.get('http://localhost:5286/api/Ruleta/ganadores');
+        const res = await axios.get('http://200.58.98.15:5286/api/Ruleta/ganadores');
         if (res.data?.length > 0) {
           const nuevos = [];
           const hist = new Set(historialMostrados);
@@ -183,11 +183,11 @@ export const Ruleta = ({ onWinCupon, usuarioLogueado }) => {
 
       if (codigoAsociado) {
         try {
-          const response = await axios.get(`http://localhost:5286/api/cupones/${codigoAsociado}`);
+          const response = await axios.get(`http://200.58.98.15:5286/api/cupones/${codigoAsociado}`);
           if (response.status === 200 && response.data.activo) {
             setCodigoCupon(response.data.codigo);
             onWinCupon(response.data.codigo);
-            await axios.post('http://localhost:5286/api/Ruleta/ganar', {
+            await axios.post('http://200.58.98.15:5286/api/Ruleta/ganar', {
               nombreUsuario: usuarioLogueado.username, premio: resultado
             });
             if (!DEBUG_MODE) { setBloqueado(true); setTiempoRestante(86400); }
