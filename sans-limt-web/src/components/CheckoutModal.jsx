@@ -135,12 +135,12 @@ export const CheckoutModal = ({
 
   return (
     <div style={S.backdrop}>
-      <div style={S.modal}>
+      <div style={S.modal} className="checkout-modal-root">
         <button style={S.closeBtn} onClick={onClose}>✕</button>
 
-        <div style={S.layout}>
+        <div style={S.layout} className="checkout-modal-layout">
           {/* FORM SIDE */}
-          <div style={S.formSide}>
+          <div style={S.formSide} className="checkout-form-side">
             <div style={S.modalHeader}>
               <h2 style={S.modalTitle}>CHECKOUT</h2>
               <div style={S.modalTitleBar}/>
@@ -196,7 +196,7 @@ export const CheckoutModal = ({
           </div>
 
           {/* SUMMARY SIDE */}
-          <div style={S.summarySide}>
+          <div style={S.summarySide} className="checkout-summary-side">
             <div style={S.summaryHeader}>
               <span style={S.summaryTitle}>RESUMEN</span>
               <span style={S.summaryCount}>{cart.length} producto{cart.length !== 1 ? 's' : ''}</span>

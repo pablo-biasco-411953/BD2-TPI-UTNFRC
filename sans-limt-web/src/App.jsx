@@ -9,7 +9,7 @@ import { CheckoutModal } from './components/CheckoutModal';
 import { AdminDashboard } from './components/AdminDashboard';
 import { LoginRegistro } from './components/LoginRegistro';
 import { Ruleta } from './components/Ruleta';
-
+import "./styles/responsive.css"; // Agregá el .css al final
 import './styles/App.css';
 
 const injectAppStyles = () => {
@@ -303,7 +303,7 @@ export default function App() {
   const [categoriaActual, setCategoriaActual] = useState('ALL');
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
   const [cuponGanado, setCuponGanado] = useState('');
-  //const [actividades, setActividades] = useState([]);
+  const [actividades, setActividades] = useState([]);
   const [recomendadosIds, setRecomendadosIds] = useState([]);
   const [hoveredProductId, setHoveredProductId] = useState(null);
   const [productoParaModal, setProductoParaModal] = useState(null);
@@ -311,12 +311,12 @@ export default function App() {
 
   useEffect(() => { window.localStorage.setItem('carrito_sanslimit', JSON.stringify(cart)); }, [cart]);
 
-  //useEffect(() => {
-    //const t = setInterval(async () => {
-      //try { const { data } = await axios.get('http://localhost:5286/api/Social/actividad'); setActividades(data); } catch {}
-    //}, 3000);
-    //return () => clearInterval(t);
-  //}, []);
+  useEffect(() => {
+    const t = setInterval(async () => {
+      try { const { data } = await axios.get('http://localhost:5286/api/Social/actividad'); setActividades(data); } catch {}
+    }, 3000);
+    return () => clearInterval(t);
+  }, []);
 
   useEffect(() => {
     traerProductos();
@@ -360,36 +360,14 @@ export default function App() {
   const sugeridosParaVos = productosProcesados.filter(p => p.esSugerido);
   const productosCatalogo = productosProcesados.filter(p => categoriaActual === 'ALL' || p.categoria === categoriaActual);
 
-const addToCart = async (producto, talleElegido) => {
-    if (!usuario) { 
-      alert('Iniciá sesión para reservar.'); 
-      setShowLoginScreen(true); 
-      return; 
-    }
-    
+  const addToCart = async (producto, talleElegido) => {
+    if (!usuario) { alert('Iniciá sesión para reservar.'); setShowLoginScreen(true); return; }
     const mongoId = (producto.id || producto._id).toString();
     const talleDef = talleElegido || 'unico';
-    
     try {
-      // 1. RESERVA EN REDIS Y MONGO
       const { data } = await axios.post('http://localhost:5286/api/Pedidos/reservar', {
-        ProductoId: mongoId, 
-        Talle: talleDef, 
-        Usuario: usuario.username, 
-        Cantidad: 1
+        ProductoId:mongoId, Talle:talleDef, Usuario:usuario.username, Cantidad:1
       });
-
-      // 🔥 2. AVISAMOS AL SOCIAL FEED (El toast global) 🔥
-      try {
-        await axios.post('http://localhost:5286/api/Social/actividad', {
-          NombreUsuario: usuario.username,
-          NombreProducto: producto.nombre
-        });
-      } catch (e) {
-        console.warn("No se pudo disparar la notificación social", e);
-      }
-
-      // 3. OPTIMISTIC UPDATE (Stock visual instantáneo)
       setProductos(prev => prev.map(p => {
         if ((p.id || p._id).toString() !== mongoId) return p;
         const c = { ...p };
@@ -397,21 +375,15 @@ const addToCart = async (producto, talleElegido) => {
         else c.stock = (c.stock ?? c.Stock) - 1;
         return c;
       }));
-
-      // 4. ACTUALIZACIÓN DEL CARRITO
       setCart(prev => {
         const existe = prev.find(i => (i.id||i._id).toString() === mongoId && i.talleElegido === talleDef);
         if (existe) return prev.map(i => ((i.id||i._id).toString()===mongoId && i.talleElegido===talleDef) ? {...i, cantidad:i.cantidad+1, expiresAt:data.expiresAt} : i);
         return [...prev, {...producto, talleElegido:talleDef, cantidad:1, expiresAt:data.expiresAt}];
       });
-      
       setShowCart(true);
-      
-    } catch { 
-      alert('Sin stock disponible.'); 
-      traerProductos(); 
-    }
+    } catch { alert('Sin stock disponible.'); traerProductos(); }
   };
+
   const handleLogout = () => {
     setUsuario(null); setIsAdmin(false); setCart([]);
     localStorage.removeItem('usuario'); localStorage.removeItem('carrito_sanslimit');
@@ -420,11 +392,11 @@ const addToCart = async (producto, talleElegido) => {
 
   return (
     <div style={S.app}>
-      {/* <div style={S.socialFeed}>
+      <div style={S.socialFeed}>
         {actividades.slice(0,3).map((act,i) => (
           <div key={i} className="social-badge-item"><span className="fire-icon">🔥</span><span>{act}</span></div>
         ))}
-      </div> */}
+      </div>
 
       <Header isAdmin={isAdmin} usuario={usuario} setShowLogin={() => setShowLoginScreen(true)} handleLogout={handleLogout}
         cartCount={cart.reduce((a,b) => a+b.cantidad, 0)} setShowCart={setShowCart} onFilterChange={setCategoriaActual} />

@@ -195,7 +195,7 @@ export const ProductGrid = ({
       </div>
 
       {/* GRID */}
-      <div style={S.grid}>
+      <div style={S.grid} className="products-grid-responsive">
         {productos.map(prod => (
           <ProductCard
             key={prod.id || prod.slug}
@@ -224,9 +224,9 @@ export const ProductGrid = ({
               <span style={S.closeL1}/><span style={S.closeL2}/>
             </button>
 
-            <div style={S.modalGrid}>
+            <div style={S.modalGrid} className="product-modal-grid">
               {/* IMAGE */}
-              <div style={S.imgSide}>
+              <div style={S.imgSide} className="product-modal-img-side">
                 {stockModal <= 3 && stockModal > 0 && (
                   <div style={S.modalUrgencyBadge}>⚡ ÚLTIMAS {stockModal} UNIDADES</div>
                 )}
@@ -234,7 +234,7 @@ export const ProductGrid = ({
               </div>
 
               {/* DETAILS */}
-              <div style={S.detailSide}>
+              <div style={S.detailSide} className="product-modal-detail-side">
                 {productoSeleccionado.categoria && (
                   <span style={S.modalCat}>{productoSeleccionado.categoria}</span>
                 )}
