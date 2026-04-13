@@ -31,8 +31,7 @@ namespace SansLimt.Api.Controllers
 
             await db.ListLeftPushAsync("social:actividad_reciente", mensaje);
             await db.ListTrimAsync("social:actividad_reciente", 0, 4);
-            await db.KeyExpireAsync("social:actividad_reciente", TimeSpan.FromMinutes(10));
-
+            await db.KeyExpireAsync("social:actividad_reciente", TimeSpan.FromSeconds(8));
             return Ok(new { success = true, mensaje });
         }
 
@@ -108,8 +107,8 @@ namespace SansLimt.Api.Controllers
         }
 
         public class InteresDto {
-            public string Email { get; set; }
-            public string Categoria { get; set; }
+            public required string Email { get; set; }
+            public required string Categoria { get; set; }
         }
 
         [HttpPost("registrar-compra/{username}")]

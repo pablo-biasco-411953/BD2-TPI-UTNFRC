@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SansLimt.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9e8066076a3caa027f0a5438d3eb970d865cf8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+838c2ed656a40bf874118489d5b756a3b16b5ca2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SansLimt.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SansLimt.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
