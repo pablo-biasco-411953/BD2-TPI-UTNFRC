@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
-
+import "../styles/responsive.css";
 const DEBUG_MODE = false;
 
 /* ─── INLINE KEYFRAMES injected once ─── */
@@ -52,6 +52,16 @@ const injectStyles = () => {
     }
     .ruleta-spin-btn:active:not(:disabled) {
       transform: translateY(0) !important;
+    }
+    @media (max-width: 900px) {
+      .ruleta-inner { flex-direction: column !important; align-items: center !important; text-align: center; gap: 48px !important; }
+      .ruleta-text-side { align-items: center; }
+      .ruleta-warning-box, .ruleta-user-box { text-align: left; }
+    }
+    @media (max-width: 600px) {
+      .ruleta-section { padding: 48px 20px !important; margin: 20px 0 !important; }
+      .ruleta-title-h2 { font-size: 3.2rem !important; }
+      .ruleta-spin-btn { width: 100% !important; min-width: unset !important; }
     }
   `;
   document.head.appendChild(s);
@@ -190,7 +200,7 @@ export const Ruleta = ({ onWinCupon, usuarioLogueado }) => {
   const isDisabled = girando || !!premio || (bloqueado && !DEBUG_MODE);
 
   return (
-    <section style={S.section}>
+    <section style={S.section} className="ruleta-section">
       {/* Scanline overlay */}
       <div style={S.scanlines} />
       {/* Grid bg */}
@@ -207,11 +217,11 @@ export const Ruleta = ({ onWinCupon, usuarioLogueado }) => {
         }}/>
       ))}
 
-      <div style={S.container}>
+      <div style={S.container} className="ruleta-inner">
         {/* TEXT SIDE */}
         <div style={S.textSide}>
           <div style={S.eyebrow}>⚡ EXCLUSIVO PARA MIEMBROS</div>
-          <h2 style={S.title}>RULETA<br/>DE LA<br/>SUERTE</h2>
+          <h2 style={S.title} className="ruleta-title-h2">RULETA<br/>DE LA<br/>SUERTE</h2>
           <div style={S.titleUnderline}/>
           <p style={S.subtitle}>Girá la rueda y desbloqueá un descuento exclusivo en tu próxima compra.</p>
 
@@ -494,4 +504,45 @@ const S = {
     boxShadow:'0 0 20px rgba(0,255,170,0.2), inset 0 0 20px rgba(0,255,170,0.03)'
   },
   fomoIcon: { marginRight:'8px' }
+};
+
+/* ── RESPONSIVE PATCH ── Inject via separate style tag */
+const injectRuletaResponsive = () => {
+  if (document.getElementById('ruleta-responsive')) return;
+  const s = document.createElement('style');
+  s.id = 'ruleta-responsive';
+  s.textContent = `
+    @media (max-width: 900px) {
+      .ruleta-container-inner {
+        flex-direction: column !important;
+        gap: 40px !important;
+        text-align: center;
+      }
+      .ruleta-wheel-side {
+        order: -1;
+      }
+    }
+    @media (max-width: 600px) {
+      .ruleta-section-root {
+        padding: 48px 20px !important;
+        margin: 20px 0 !important;
+      }
+      .ruleta-title-big {
+        font-size: 3rem !important;
+      }
+      .ruleta-spin-btn {
+        width: 100% !important;
+        min-width: unset !important;
+      }
+      .ruleta-wheel-img {
+        width: 240px !important;
+        height: 240px !important;
+      }
+      .ruleta-wheel-wrapper {
+        width: 240px !important;
+        height: 240px !important;
+      }
+    }
+  `;
+  document.head.appendChild(s);
 };

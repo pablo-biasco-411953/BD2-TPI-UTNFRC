@@ -1,0 +1,166 @@
+/* ================================================================
+   SANS LIMIT · GLOBAL RESPONSIVE STYLES
+   Drop this into your App.css or import separately
+   ================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: #fff;
+  font-family: 'Space Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ── RULETA RESPONSIVE ── */
+@media (max-width: 900px) {
+  /* Force flex column on the ruleta inner container */
+  section[style*="padding: 80px 40px"] > div > div:first-child {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+/* ── PRODUCT GRID RESPONSIVE ── */
+.products-grid-responsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+@media (max-width: 700px) {
+  .products-grid-responsive {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .products-grid-responsive {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* ── MAIN PADDING RESPONSIVE ── */
+@media (max-width: 900px) {
+  main { padding: 40px 20px !important; }
+}
+@media (max-width: 600px) {
+  main { padding: 28px 16px !important; }
+}
+
+/* ── CART DRAWER RESPONSIVE ── */
+@media (max-width: 480px) {
+  .cart-drawer-root {
+    width: 100vw !important;
+  }
+}
+
+/* ── CHECKOUT MODAL RESPONSIVE ── */
+@media (max-width: 800px) {
+  .checkout-modal-layout {
+    flex-direction: column !important;
+    overflow-y: auto;
+  }
+  .checkout-form-side {
+    border-right: none !important;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 24px !important;
+  }
+  .checkout-summary-side {
+    padding: 24px !important;
+  }
+}
+@media (max-width: 480px) {
+  .checkout-modal-root {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    max-height: 100vh !important;
+    border-radius: 0 !important;
+  }
+}
+
+/* ── PRODUCT MODAL RESPONSIVE ── */
+@media (max-width: 700px) {
+  .product-modal-grid {
+    flex-direction: column !important;
+  }
+  .product-modal-img-side {
+    height: 300px !important;
+  }
+  .product-modal-detail-side {
+    padding: 20px !important;
+    overflow-y: auto;
+    max-height: 60vh;
+  }
+}
+
+/* ── CAROUSEL RESPONSIVE ── */
+@media (max-width: 600px) {
+  .cc { width: 200px !important; }
+  .cc-img-wrap { height: 220px !important; }
+  .cc-price { font-size: 1rem !important; }
+}
+
+/* ── SOCIAL FEED RESPONSIVE ── */
+@media (max-width: 600px) {
+  .social-badge-item {
+    font-size: 0.62rem !important;
+    padding: 10px 14px !important;
+    max-width: 260px !important;
+  }
+}
+
+/* ── FOMO BADGE RESPONSIVE ── */
+@media (max-width: 600px) {
+  .grid-fomo-badge {
+    bottom: 16px !important;
+    right: 16px !important;
+    left: 16px !important;
+    font-size: 0.7rem !important;
+    padding: 10px 14px !important;
+  }
+}
+
+/* ── RECOM SECTION RESPONSIVE ── */
+@media (max-width: 600px) {
+  .recom-section {
+    padding: 0 !important;
+    margin-bottom: 48px !important;
+  }
+}
+
+/* ── PRODUCT CARD RESPONSIVE ── */
+@media (max-width: 700px) {
+  .card-img-wrap {
+    height: 280px !important;
+  }
+  .product-card-root {
+    font-size: 0.9em;
+  }
+}
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* ── FOCUS STYLES (accessibility) ── */
+:focus-visible {
+  outline: 2px solid #00ffaa;
+  outline-offset: 2px;
+}
+
+/* ── TAP HIGHLIGHT (mobile) ── */
+* { -webkit-tap-highlight-color: transparent; }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
